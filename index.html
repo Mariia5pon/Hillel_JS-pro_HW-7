@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Lora:wght@400;600;700&family=Poppins&family=Roboto:wght@400;500&display=swap"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Lesson 7</title>
 </head>
 <body>
-
+<header>
+	<div class="container">
+		<div class="header_content">
+			<img src="./img/logo.png" alt="Logo">
+			<nav class="header_links">
+				<p>Homeworks :</p>
+				<a href="#sec-1">7.1. Locking</a>
+				<a href="#sec-2">7.2. Production through currying</a>
+				<a href="#sec-3">7.3. Function with a cycle</a>
+			</nav>
+		</div>
+	</div>
+</header>
+<main>
+	<section class="main-sec-1" id="sec-1">
+		<div class="main-sec-1_content container">
+			<div class="main-sec-1_text">
+				<h2>7.1. Locking</h2>
+				<h4>Write a function that accepts 1 parameter. But it does not matter what was transmitted the first
+					time, etc. All this with closures, for:<br>
+					
+					console.log(sum(4)); // 4<br>
+					
+					console.log(sum(6)); // 10<br>
+					
+					console.log(sum(10)); // 20<br>
+					
+					console.log(sum(7)); // 27</h4>
+				<button onclick="getResultOfTask1()" class="btn">Go</button>
+				<h4 id="task-1_result"></h4>
+			</div>
+		</div>
+	</section>
+	<section class="main-sec-2" id="sec-2">
+		<div class="main-sec-2_content container">
+			<div class="main-sec-2_text">
+				<h2>7.2. Production through currying</h2>
+				<h4>Create a function to calculate the product of two numbers, called as follows: name(5)(2) . The
+					function must return a result (there must not be a log console in the middle of the function!)</h4>
+				<button onclick="getResultOfTask2()" class="btn">Go</button>
+			</div>
+		</div>
+	</section>
+	<section class="main-sec-3" id="sec-3">
+		<div class="main-sec-3_content container">
+			<div class="main-sec-3_text">
+				<h2>7.3. Function with a cycle</h2>
+				<h4>The loop at each iteration prompts you to enter a number greater than 100 (but a maximum of 10
+					iterations of the loop). If the visitor entered a number less than one hundred - ask to enter again,
+					and so on. If the user enters more than a hundred, the text or the loop completes all iterations,
+					the function outputs the last user input to the console and terminates the function.</h4>
+				<button onclick="getResultOfTask3()" class="btn">Go</button>
+				<h4 id="task-3_result"></h4>
+			</div>
+		</div>
+	</section>
+</main>
+<footer></footer>
+<script src="./js/app.js"></script>
 </body>
 </html>
