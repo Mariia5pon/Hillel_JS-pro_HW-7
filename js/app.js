@@ -35,5 +35,18 @@ function getResultOfTask2(){
 
 
 function getResultOfTask3(){
-
+    const func = () =>
+    {
+        let number = 0;
+        for (let i = 0; i < 10; i++) {
+            number = parseInt(prompt('Enter a number greater than 100.'));
+            if (number > 100 && !isNaN(number)) {
+                break;
+            } else {
+                alert('Please enter a number greater than 100.');
+            }
+        }
+        return number;
+    }
+    document.getElementById('task-3_result').innerHTML = (`Your number: ${func()}`);
 }
