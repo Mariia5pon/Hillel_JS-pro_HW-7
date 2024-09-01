@@ -21,8 +21,18 @@ function getResultOfTask1() {
 }
 
 function getResultOfTask2(){
-
+    const firstDigit = parseInt(prompt('Enter first digit for multiply.'));
+    const secondDigit = parseInt(prompt('Enter second digit for multiply.'));
+    const multiply = (a) => {
+        return (b) => {
+            return a*b;
+        }
+    }
+    const result = multiply(firstDigit)(secondDigit);
+    console.log(result);
+    alert('Open console to show result (F12).');
 }
+
 
 function getResultOfTask3(){
 
